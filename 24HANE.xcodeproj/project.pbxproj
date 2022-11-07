@@ -14,6 +14,7 @@
 		0E20CFCE2918FE49007D779C /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20CFCD2918FE49007D779C /* ToolBarView.swift */; };
 		0E20CFD12919003C007D779C /* AchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20CFD02919003C007D779C /* AchievementView.swift */; };
 		0E20CFD4291901FB007D779C /* ColorExtentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20CFD3291901FB007D779C /* ColorExtentsion.swift */; };
+		E891B715291908C3008B0509 /* AccumulationTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891B714291908C3008B0509 /* AccumulationTimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0E20CFCD2918FE49007D779C /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 		0E20CFD02919003C007D779C /* AchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementView.swift; sourceTree = "<group>"; };
 		0E20CFD3291901FB007D779C /* ColorExtentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtentsion.swift; sourceTree = "<group>"; };
+		E891B714291908C3008B0509 /* AccumulationTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulationTimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				0E20CFD02919003C007D779C /* AchievementView.swift */,
 				0E20CFC92918FB60007D779C /* MainView.swift */,
 				0E20CFCD2918FE49007D779C /* ToolBarView.swift */,
+				E891B714291908C3008B0509 /* AccumulationTimeView.swift */,
 			);
 			path = VIEW;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				0E20CFD4291901FB007D779C /* ColorExtentsion.swift in Sources */,
 				0E20CFD12919003C007D779C /* AchievementView.swift in Sources */,
+				E891B715291908C3008B0509 /* AccumulationTimeView.swift in Sources */,
 				0E20CFCE2918FE49007D779C /* ToolBarView.swift in Sources */,
 				0E20CFBC2918EEA1007D779C /* _4HANEApp.swift in Sources */,
 				0E20CFCA2918FB60007D779C /* MainView.swift in Sources */,

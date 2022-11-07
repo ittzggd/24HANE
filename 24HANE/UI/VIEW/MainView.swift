@@ -16,6 +16,8 @@ struct MainView: View {
                     //achievementview
                     // up to now view
                     // thismonth
+                    AccumulationTimeView(text: "오늘")
+                    AccumulationTimeView(text: "이번달")
                 }
         }
     }
