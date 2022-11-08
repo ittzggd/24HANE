@@ -8,38 +8,43 @@
 import SwiftUI
 
 struct TagLogView: View {
-//    @Binding var inOutLog: [DailyLog.InOutLog]
-    let sampleData: [[String]]
+    //    @Binding var inOutLog: [DailyLog.InOutLog]
+    let sampleData: [DailyLog.InOutLog]
 
     var body: some View {
-        ZStack {
+        VStack (spacing: 0) {
+            TagLogHeaderView()
             List {
-                Section(header: TagLogHeaderView()) {
-                    ForEach(sampleData, id: \.self) { data in
-                        TagLogBodyView(inTime: data[0], outTime: data[1], durationTime: data[2])
+                    ForEach (sampleData) { index in
+                        TagLogBodyView(inTime: index.inTime, outTime: index.outTime, durationTime: index.durationTime)
                     }
-                }
-                .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.white)
             }
+            .listStyle(.plain)
         }
+        .foregroundColor(Color.black)
+        .font(.system(size: 24))
+        .clipShape(RoundedRectangle(cornerRadius: 15))
     }
 }
 
 struct TagLogView_Previews: PreviewProvider {
+    
     static let testData =
     [
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"],
-        ["11:27:18", "17:27:18", "06:00:00"]
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+        DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00")
     ]
     static var previews: some View {
-        TagLogView(sampleData: testData).previewLayout(.sizeThatFits)
+        TagLogView(sampleData: testData)
+            .previewLayout(.sizeThatFits)
     }
 }

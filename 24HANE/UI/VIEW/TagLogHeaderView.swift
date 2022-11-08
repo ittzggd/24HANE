@@ -10,17 +10,16 @@ import SwiftUI
 struct TagLogHeaderView: View {
     var body: some View {
         HStack {
-            Spacer()
             Text("입실")
-            Spacer()
+                .frame(maxWidth: .infinity)
             Spacer()
             Text("퇴실")
-            Spacer()
+                .frame(maxWidth: .infinity)
             Spacer()
             Text("체류시간")
-            Spacer()
+                .frame(maxWidth: .infinity)
         }
-        .font(.system(size: 24))
+        .padding()
         .foregroundColor(Color.black)
         .background(Color.logTableBackground)
     }

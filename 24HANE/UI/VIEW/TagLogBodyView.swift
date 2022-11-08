@@ -15,15 +15,12 @@ struct TagLogBodyView: View {
     var body: some View {
         HStack {
             Text(inTime)
-                .frame(width: 100)
+                .frame(maxWidth: .infinity)
             Text(outTime)
-                .frame(width: 100)
+                .frame(maxWidth: .infinity)
             Text(durationTime)
-                .frame(width: 100)
+                .frame(maxWidth: .infinity)
         }
-        .background(Color.white)
-        .foregroundColor(Color.black)
-        .font(.system(size: 24))
     }
 }
 
