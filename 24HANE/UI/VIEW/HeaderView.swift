@@ -27,7 +27,9 @@ struct HeaderView: View {
                 }
                 Spacer()
             }.background(Color.bg_navy)
-                .padding()
+//            Divider()
+//                .background(Color.white)
+         //       .frame(height:3)
             Text("")
         }
     }
