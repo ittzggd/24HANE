@@ -10,6 +10,7 @@ import SwiftUI
 extension Color{
     static let bg_navy = Color(hex: "06283D")
     static let progressbarblue = Color(hex: "256D85")
+    static let logTableBackground = Color(hex: "E0DFDF")
     static let checkInGreen = Color(hex: "03F346")
     static let checkOutGray = Color(hex: "D9D9D9")
 }
