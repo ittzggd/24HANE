@@ -20,6 +20,8 @@ struct MainView: View {
                     //achievementview
                     // up to now
                     // thismonth
+                    AccumulationTimeView(text: "오늘")
+                    AccumulationTimeView(text: "이번달")
                 }
             Spacer()
             Spacer()
