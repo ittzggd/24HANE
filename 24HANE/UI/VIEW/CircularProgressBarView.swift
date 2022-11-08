@@ -18,18 +18,35 @@ struct circularProgressView: View{
 }
 
 struct CircularProgressBarView: View {
+    let progress: Double
     var body: some View {
-    VStack{
-            circularProgressView()
-                .frame(width: 200, height: 200)
-//            ProgressView(value: progress)
-//                .progressViewStyle(.circular)
+        ZStack{
+            Text("\(Int(progress * 100)) %")
+                .font(.system(size: 40, weight: .regular, design: .rounded))
+                .foregroundColor(Color.white)
+            Circle()
+                .stroke(
+                    Color(UIColor.systemGray3).opacity(0.5),
+                    lineWidth: 15
+                )
+            Circle()
+                .trim(from:0, to: progress)
+            //user data 맞춰서 to 변경
+                .stroke(
+                    Color.progressbarblue,
+                    style: StrokeStyle(
+                        lineWidth: 15,
+                        lineCap: .round
+                    )
+                )
+                .rotationEffect(.degrees(270))
         }
     }
 }
 
 struct CircularProgressBarView_Previews: PreviewProvider {
     static var previews: some View {
-        CircularProgressBarView()
+        CircularProgressBarView(progress: 0.76)
+            .frame(width: 200, height: 200)
     }
 }
