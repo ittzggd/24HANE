@@ -20,7 +20,7 @@ struct MainView: View {
             Color.bg_navy
             VStack(alignment: .center){
                 HeaderView()
-                HStack{
+                HStack(alignment: .center){
                     Text("Intra ID")
                         .foregroundColor(.white)
                         .font(.system(size:28, weight: .semibold, design: .default))
@@ -28,7 +28,10 @@ struct MainView: View {
                         .fill()
                         .frame(width:20, height: 20)
                         .foregroundColor(CheckedIn)
-                    
+                }
+                HStack(alignment: .center){
+                    AchievementView(objectiveH: 80, objectiveM: 10, progressH: 57, progressM: 10)
+                        .position(x: 195, y: 200)
                 }
                 AchievementView(objectiveH: 80, objectiveM: 10, progressH: 57, progressM: 10)
                     .position(x: 195, y: 190)
@@ -41,10 +44,10 @@ struct MainView: View {
             }
         }
     }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
+    
+    struct MainView_Previews: PreviewProvider {
+        static var previews: some View {
+            MainView()
+        }
     }
 }
