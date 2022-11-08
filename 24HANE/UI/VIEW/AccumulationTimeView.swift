@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AccumulationTimeView: View {
     let text: String
+//    @Binding var time: Long
 
     var body: some View {
         ZStack {
