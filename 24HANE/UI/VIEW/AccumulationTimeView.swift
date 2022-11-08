@@ -2,7 +2,7 @@
 //  AccumulationTimeView.swift
 //  24HANE
 //
-//  Created by jaewon on 2022/11/07.
+//  Created by jaewon on 2022/11/08.
 //
 
 import SwiftUI
