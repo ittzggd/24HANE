@@ -11,14 +11,20 @@ struct MainView: View {
     var body: some View {
         ZStack{
             Color.bg_navy
-                VStack{
-                    //toolbarView
+            VStack(alignment: .leading){
+                HeaderView()
+                HStack(alignment: .center){
+                    
+                    AchievementView()
+                }
                     //achievementview
-                    // up to now view
+                    // up to now
                     // thismonth
                     AccumulationTimeView(text: "오늘")
                     AccumulationTimeView(text: "이번달")
                 }
+            Spacer()
+            Spacer()
         }
     }
 }

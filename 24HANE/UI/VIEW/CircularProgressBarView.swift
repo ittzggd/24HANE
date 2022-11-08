@@ -1,5 +1,5 @@
 //
-//  AchievementView.swift
+//  CircularProgressBarView.swift
 //  24HANE
 //
 //  Created by Katherine JANG on 11/7/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircularProgressView: View{
+struct circularProgressView: View{
     var body: some View {
         Circle()
             .stroke( // 1
@@ -17,11 +17,10 @@ struct CircularProgressView: View{
     }
 }
 
-struct AchievementView: View {
-    @State private var progress = 0.6
+struct CircularProgressBarView: View {
     var body: some View {
-        VStack{
-            CircularProgressView()
+    VStack{
+            circularProgressView()
                 .frame(width: 200, height: 200)
 //            ProgressView(value: progress)
 //                .progressViewStyle(.circular)
@@ -29,8 +28,8 @@ struct AchievementView: View {
     }
 }
 
-struct AchievementView_Previews: PreviewProvider {
+struct CircularProgressBarView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementView()
+        CircularProgressBarView()
     }
 }
