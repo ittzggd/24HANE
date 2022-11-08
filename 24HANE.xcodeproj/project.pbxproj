@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E04B6B0291A4B1B009937AD /* CalanderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04B6AF291A4B1B009937AD /* CalanderView.swift */; };
+		0E04B6B2291A567C009937AD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04B6B1291A567C009937AD /* DetailView.swift */; };
 		0E20CFBC2918EEA1007D779C /* _4HANEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20CFBB2918EEA1007D779C /* _4HANEApp.swift */; };
 		0E20CFC02918EEA4007D779C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E20CFBF2918EEA4007D779C /* Assets.xcassets */; };
 		0E20CFC32918EEA4007D779C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E20CFC22918EEA4007D779C /* Preview Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E04B6AF291A4B1B009937AD /* CalanderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanderView.swift; sourceTree = "<group>"; };
+		0E04B6B1291A567C009937AD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0E20CFB82918EEA1007D779C /* 24HANE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 24HANE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E20CFBB2918EEA1007D779C /* _4HANEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4HANEApp.swift; sourceTree = "<group>"; };
 		0E20CFBF2918EEA4007D779C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				E893F628291A16BD00C95185 /* TagLogView.swift */,
 				E893F62C291A19E200C95185 /* TagLogHeaderView.swift */,
 				E893F632291A2EEB00C95185 /* TagLogBodyView.swift */,
+				0E04B6AF291A4B1B009937AD /* CalanderView.swift */,
+				0E04B6B1291A567C009937AD /* DetailView.swift */,
 			);
 			path = VIEW;
 			sourceTree = "<group>";
@@ -192,6 +198,9 @@
 				E893F635291A325600C95185 /* DailyLog.swift in Sources */,
 				0ED872AB29190E81005B9C9E /* HeaderView.swift in Sources */,
 				E893F633291A2EEB00C95185 /* TagLogBodyView.swift in Sources */,
+				0E04B6B2291A567C009937AD /* DetailView.swift in Sources */,
+				0ED872AB29190E81005B9C9E /* HeaderView.swift in Sources */,
+				0E04B6B0291A4B1B009937AD /* CalanderView.swift in Sources */,
 				0E20CFD4291901FB007D779C /* ColorExtentsion.swift in Sources */,
 				0E20CFD12919003C007D779C /* AchievementView.swift in Sources */,
 				E893F629291A16BD00C95185 /* TagLogView.swift in Sources */,
