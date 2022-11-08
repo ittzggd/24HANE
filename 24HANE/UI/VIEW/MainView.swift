@@ -20,7 +20,7 @@ struct MainView: View {
             Color.bg_navy
             VStack(alignment: .center){
                 HeaderView()
-                HStack(alignment: .center){
+                HStack{
                     Text("Intra ID")
                         .foregroundColor(.white)
                         .font(.system(size:28, weight: .semibold, design: .default))
@@ -30,16 +30,15 @@ struct MainView: View {
                         .foregroundColor(CheckedIn)
                     
                 }
-                HStack(alignment: .center){
                 AchievementView(objectiveH: 80, objectiveM: 10, progressH: 57, progressM: 10)
-                    .position(x: 195, y: 200)
-                }
-                    //achievementview
-                    // up to now
-                    // thismonth
+                    .position(x: 195, y: 190)
+                VStack(spacing: 10){
                     AccumulationTimeView(text: "오늘")
+                        .position(x: 195, y: 110)
                     AccumulationTimeView(text: "이번달")
+                        .position(x: 195, y: 50)
                 }
+            }
         }
     }
 }

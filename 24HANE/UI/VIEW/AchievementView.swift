@@ -27,8 +27,8 @@ struct AchievementView: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
-                .stroke(lineWidth: 3)
-                .frame(width: 310, height: 400)
+                .stroke(lineWidth: 2)
+                .frame(width: 310, height: 360)
                 .foregroundColor(Color.white)
             VStack{
                 CircularProgressBarView(progress: progress)
@@ -36,15 +36,12 @@ struct AchievementView: View {
                 Text("이번달 성취도")
                     .font(.system(size: 30, weight: .medium, design: .rounded))
                     .foregroundColor(.white)
-                    .padding(20)
+                    .padding(15)
                 Text("\(progressH) : \(progressM) / \(objectiveH) : \(objectiveM)")
-                    .font(.system(size: 30, weight: .medium, design: .rounded))
+                    .font(.system(size: 30, weight: .bold))
                     .foregroundColor(.white)
-                
-                    
-                
             }
-        }
+        }.background(Color.bg_navy)
     }
 }
 
