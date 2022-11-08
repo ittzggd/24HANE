@@ -7,12 +7,30 @@
 
 import SwiftUI
 
+private let testData =
+[
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00"),
+    DailyLog.InOutLog(inTime: "11:27:18", outTime: "17:27:18", durationTime: "06:00:00")
+]
+
 struct DetailView: View {
     var body: some View {
         ZStack{
             Color.bg_navy
             VStack(alignment: .center){
                 HeaderView()
+//                CalanderView()
+                Spacer()
+                TagLogView(sampleData: testData)
+                    .padding()
                 Spacer()
             }
         }
