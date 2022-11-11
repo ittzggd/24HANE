@@ -25,13 +25,12 @@ struct DetailView: View {
     var body: some View {
         ZStack{
             Color.bg_navy
-            VStack(alignment: .center){
+            VStack(alignment: .center, spacing: 55){
                 HeaderView()
-//                CalanderView()
+                CalanderView()
                 Spacer()
                 TagLogView(sampleData: testData)
                     .padding()
-                Spacer()
             }
         }
     }
