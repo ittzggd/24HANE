@@ -12,6 +12,11 @@ extension Color{
     static let progressbarblue = Color(hex: "256D85")
     static let checkInGreen = Color(hex: "03F346")
     static let checkOutGray = Color(hex: "D9D9D9")
+    static let firstLevel = Color(hex: "D1EDFA")
+    static let secondLevel = Color(hex: "7BD6FF")
+    static let thirdLevel = Color(hex : "3FC3FF")
+    static let fourthLevel = Color(hex: "0097DC")
+    
 }
 
 extension Color{

@@ -29,10 +29,10 @@ struct MainView: View {
                         .frame(width:20, height: 20)
                         .foregroundColor(CheckedIn)
                 }
-                HStack(alignment: .center){
-                    AchievementView(objectiveH: 80, objectiveM: 10, progressH: 57, progressM: 10)
-                        .position(x: 195, y: 200)
-                }
+//                HStack(alignment: .center){
+//                    AchievementView(objectiveH: 80, objectiveM: 10, progressH: 57, progressM: 10)
+//                        .position(x: 195, y: 200)
+//                }
                 AchievementView(objectiveH: 80, objectiveM: 10, progressH: 57, progressM: 10)
                     .position(x: 195, y: 190)
                 VStack(spacing: 10){
