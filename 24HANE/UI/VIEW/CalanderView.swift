@@ -22,7 +22,10 @@ struct CalendarView: View {
     ]
     
     func filledColor (time: Int) -> Color{
-        if time % 5 == 1 {
+        if(time % 19 == 0){
+            return (Color.fourthLevel)
+        }
+        else if time % 5 == 1 {
             return (Color.thirdLevel)
         }
         else if(time % 5 == 4){
@@ -35,12 +38,16 @@ struct CalendarView: View {
     }
     
     private var BGColor = Color.white
+    private var calendar = Calendar.current
+    private var date = Date()
+    private var startDate = getFirstDateOfMonth(year: 2022, month: 11)
+    private var lastDay = getLastDayOfMonth(year: 2022, month: 11)
     
     var body: some View{
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .stroke(lineWidth: 2)
-                .frame(width: 380, height: 310)
+                .frame(width: 360, height: 310)
                 .offset(x: 0, y: -24)
                 .foregroundColor(Color.white)
             VStack(spacing: -40){
@@ -52,14 +59,18 @@ struct CalendarView: View {
                     Spacer()
                 } .foregroundColor(.white)
                 LazyVGrid(columns: cols, spacing: 4){
-                    ForEach((1...30), id: \.self){ dayNum in
-                        Button(action: { }){
-                            Text("\(dayNum)")
-                                .font(.system(size: 20, weight: .bold))
-                                .foregroundColor(Color.bg_navy)
-                                .frame(width: 40, height: 40)
-                 
-                                .background(filledColor(time: dayNum))
+                    ForEach((1...42), id: \.self){ dayNum in
+                        if(dayNum > (0 + startDate) && dayNum < lastDay + 1 + startDate){
+                            Button(action: { }){
+                                Text("\(dayNum - startDate)")
+                                    .font(.system(size: 20, weight: .bold))
+                                    .foregroundColor(Color.bg_navy)
+                                    .frame(width: 40, height: 40)
+                                
+                                    .background(filledColor(time: dayNum))
+                            }
+                        } else {
+                            Text("")
                         }
                     }
                 }

@@ -20,6 +20,10 @@ struct MainView: View {
             Color.bg_navy
             VStack(alignment: .center){
                 HeaderView()
+                Divider()
+                    .frame(height: 1.8)
+                    .background(Color.white)
+                    .offset(y: -5)
                 HStack{
                     Text("Intra ID")
                         .foregroundColor(.white)
@@ -34,9 +38,9 @@ struct MainView: View {
                     .position(x: 195, y: 190)
                 VStack(spacing: 10){
                     AccumulationTimeView(text: "오늘")
-                        .position(x: 195, y: 110)
+                        .position(x: 195, y: 120)
                     AccumulationTimeView(text: "이번달")
-                        .position(x: 195, y: 50)
+                        .position(x: 195, y: 70)
                 }
             }
         }
